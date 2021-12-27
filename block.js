@@ -18,7 +18,7 @@ class Block {
     }
 
     static genesis(){
-        return new this('Genesis Time','0'.repeat(64),'1'.repeat(64),[]);
+        return new this("Genesis time",'0'.repeat(64),'0'.repeat(64),[]);
     }
 
     static mineBlock(lastBlock,data){

@@ -21,7 +21,7 @@ for (let i = 1; i <= 10; i++){
 */
 
 /*
-* test unitario genesis -> fooblock with sah256
+* test unitario genesis enlazado con fooblock with sah256
 */
 const fooBlock = Block.mineBlock(Block.genesis().hash,'foobar data');
 console.log(Block.genesis().toString());

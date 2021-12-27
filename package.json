@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
-    "dev-test": "nodemon testblock"
+    "dev-test": "nodemon dev-test"
   },
   "keywords": [],
   "author": "",

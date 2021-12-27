@@ -16,8 +16,17 @@ class Block {
     }
 
     static genesis(){
-        return new this('Genesis Time','0'.repeat(64),'0'.repeat(64),[]);
+        return new this('Genesis Time','0'.repeat(64),'1'.repeat(64),[]);
     }
+
+    static mineBlock(lastBlock,data){
+        const timestamp = Date.now();
+        const lastHash = lastBlock.hash;
+        const hash = '0'.repeat(64);
+        return new this(timestamp,lastBlock,hash,data);
+    }
+
+
 
 }
 
